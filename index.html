@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookshelf Apps</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Bagian Header -->
+    <header class="header">
+      <div class="header-top">
+          <img src="./assets/images/logo.png" alt="logo bookshelf" />
+          <h2>Bookshelf Apps</h2>
+        </div>
+      </div>
+    </header>
+
+    <!-- Bagian Main -->
+    <main>
+      <section class="container">
+        <h2>Bookshelf Apps</h2>
+        <div>
+          <form action="#" id="form" >
+            <div class="form first">
+              <div class="details book">
+                <span class="title">Bookshelf</span>
+                <div class="fields">
+                  <div class="input-field">
+                    <label>Judul</label>
+                    <input id="essay" type="text" placeholder="ex : Belajar Membuat Front-End Web" required/>
+                  </div>
+                  <div class="input-field">
+                    <label>Penerbit</label>
+                    <input id="publisher" type="text" placeholder="ex : Khrisna Indrawan Eka Putra " required />
+                  </div>
+                  <div class="input-field">
+                    <label>Tahun</label>
+                    <input id="year" type="date" placeholder="ex : 2023" required/>
+                  </div> 
+                  <div class="input-field">
+                    <label>Bahasa</label>
+                    <select name="bookCategory" id="language">
+                      <option value="" selected>Pilih kategori buku...</option>
+                                <option value="Indonesia">Indonesia</option>
+                                <option value="Inggris">Inggris</option>
+                                <option value="Jepang">Jepang</option>
+                                <option value="Korea">Korea</option>
+                    </select>
+                  </div>
+                  <div class="input-field">
+                    <label>Jumlah halaman</label>
+                    <input id="number" type="number" placeholder="ex : 100 " required/>
+                  </div>
+                  <div class="input-field">
+                    <label>ISBN</label>
+                    <input id="isbn" type="number" placeholder="ex : 9786020658841 " required/>
+                  </div>
+                  <div class="input-item row">
+                    <label>Selesai dibaca</label>
+                    <input type="checkbox" id="isComplete"/>
+                    </div>
+                </div>
+                <button class="save-button" type="submit" id="btn-submit">Save Data</button>
+              </div>
+            </div>
+          </form>
+        </div>
+  
+        <div class="details">
+          <span class="section-title">Search Bar</span>
+          <form class="input-box" id="searchBook">
+            <img src="./assets/images/search.png" alt="">
+            <input type="text" placeholder="search here......" id="searchQuery">
+            <button class="button" type="submit" id="searchButton">Search</button>
+          </form>
+        </div>
+
+        <br>
+        <div class="details">
+          <div id="list_book" class="flex-space-between">
+            <div  class="book">
+              <div id="not-is-complete" class="book_list flex-item mr-1">
+                <h4>
+                   <img src="./assets/images/book-2.png" alt="" />
+                  <span>Book Not Finished Reading</span>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <br>
+        <div class="details">
+          <div id="list_book" class="flex-space-between">
+            <div  class="book">
+              <div id="complete-book" class="book_list flex-item mr-1">
+                <h4>
+                   <img src="./assets/images/book-1.png" alt="" />
+                  <span>Book Not Finished Reading</span>
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+    </main>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
+
+
